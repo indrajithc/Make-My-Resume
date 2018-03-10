@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ist_Test_New</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <jsp-file>/Login.jsp</jsp-file>
+    <init-param>
+      <param-name>NAME</param-name>
+      <param-value>ProjectX</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminLogin</servlet-name>
+    <jsp-file>/admin/Login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/loginpage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/adminloginpage</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>EmployerLogin</servlet-name>
+    <jsp-file>/employer/Login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployerLogin</servlet-name>
+    <url-pattern>/employerloginpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EmployerRegister</servlet-name>
+    <jsp-file>/employer/register.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployerRegister</servlet-name>
+    <url-pattern>/employerRegisterpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EmployerConfirm</servlet-name>
+    <jsp-file>/employer/confirm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployerConfirm</servlet-name>
+    <url-pattern>/employerConfirmpage</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet> 
+      <servlet-name>EmployeeLogin</servlet-name>
+    <jsp-file>/employee/Login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeLogin</servlet-name>
+    <url-pattern>/employeeloginpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EmployeeRegister</servlet-name>
+    <jsp-file>/employee/register.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeRegister</servlet-name>
+    <url-pattern>/employeeRegisterpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EmployeeConfirm</servlet-name>
+    <jsp-file>/employee/confirm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeConfirm</servlet-name>
+    <url-pattern>/employeeConfirmpage</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
